@@ -36,32 +36,39 @@ public class Ejercicio4 extends javax.swing.JFrame {
         jLT = new javax.swing.JLabel();
         jTxt = new javax.swing.JTextField();
         jB = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(236, 165, 112));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLi.setBackground(new java.awt.Color(146, 112, 47));
         jLi.setForeground(new java.awt.Color(255, 255, 255));
         jLi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pngegg.png"))); // NOI18N
         jLi.setText("jLabel1");
+        jPanel1.add(jLi, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, 121, -1));
 
         jLC.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLC.setForeground(new java.awt.Color(255, 255, 255));
         jLC.setText("C");
+        jPanel1.add(jLC, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, -20, 50, 90));
 
         jLcalc.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLcalc.setForeground(new java.awt.Color(255, 255, 51));
         jLcalc.setText("alculadora de");
+        jPanel1.add(jLcalc, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
 
         jLTx.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLTx.setForeground(new java.awt.Color(255, 255, 255));
         jLTx.setText("T");
+        jPanel1.add(jLTx, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, -1, -1));
 
         jLT.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLT.setForeground(new java.awt.Color(255, 0, 51));
         jLT.setText("emperatura");
+        jPanel1.add(jLT, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, -1));
 
         jTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTxt.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -70,6 +77,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
                 jTxtActionPerformed(evt);
             }
         });
+        jPanel1.add(jTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 88, -1));
 
         jB.setBackground(new java.awt.Color(51, 255, 255));
         jB.setForeground(new java.awt.Color(0, 0, 0));
@@ -79,51 +87,11 @@ public class Ejercicio4 extends javax.swing.JFrame {
                 jBActionPerformed(evt);
             }
         });
+        jPanel1.add(jB, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 88, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLC)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLcalc)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLTx)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLT)
-                        .addGap(58, 58, 58)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jB, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addComponent(jLi, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLC, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(jLcalc)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLTx)
-                            .addComponent(jLT)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLi, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jB)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/0800400000006_Eltiempoylatemperatura.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 0, 660, 210));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -194,6 +162,7 @@ public class Ejercicio4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLC;
     private javax.swing.JLabel jLT;
     private javax.swing.JLabel jLTx;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLcalc;
     private javax.swing.JLabel jLi;
     private javax.swing.JPanel jPanel1;
